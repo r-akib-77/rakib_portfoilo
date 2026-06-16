@@ -2,21 +2,3 @@ name = "rakib-portfolio"
 compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".vercel/output/static"
-
-# ── Cloudflare D1 (SQLite) Database ────────────────────────────────────────
-# 1. Create your DB:  npx wrangler d1 create portfolio-db
-# 2. Paste the returned database_id below
-# 3. Run migrations:  npx wrangler d1 execute portfolio-db --file=./schema.sql --remote
-[[d1_databases]]
-binding = "DB"
-database_name = "portfolio-db"
-database_id = "YOUR_D1_DATABASE_ID"   # ← replace after running: wrangler d1 create portfolio-db
-
-# ── Non-secret environment variables ───────────────────────────────────────
-# Secret vars (passwords, keys) go in: Cloudflare Pages dashboard → Settings → Environment variables
-[vars]
-R2_BUCKET_NAME = "portfolio-media"
-# R2_PUBLIC_URL  = "https://pub-xxxx.r2.dev"   # add your real value here too
-
-# ── Local dev with wrangler pages dev ──────────────────────────────────────
-# Secrets for local dev live in .dev.vars (gitignored)
