@@ -32,7 +32,7 @@ const projects = [
 
     preview: "/projectPic/bit-trade.png",
 
-    github: "https://github.com/r-akib-77/BritTrade-Trading",
+    github: "/buynow",
 
     live: "https://brittrade.britsync.co.uk/",
 
@@ -96,7 +96,7 @@ const projects = [
 
     preview: "/projectPic/odyssey.png",
 
-    github: "https://github.com/r-akib-77/Odessey-FC",
+    github: "/buynow",
 
     live: "https://odessey-fc.pages.dev/",
 
@@ -160,7 +160,7 @@ const projects = [
 
     preview: "/projectPic/leadhunter.png",
 
-    github: "https://github.com/r-akib-77/LeadHunter",
+    github: "/buynow",
 
     live: "https://leadhunter.uk/",
 

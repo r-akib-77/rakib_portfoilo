@@ -17,7 +17,12 @@ export default function AdminProjectsPage() {
   };
 
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main
+      className="min-h-screen
+    md:pt-28
+    pt-20
+    bg-black text-white"
+    >
       {/* Background Glow */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
         <div className="absolute left-1/2 top-32 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-purple-600/20 blur-[150px]" />
