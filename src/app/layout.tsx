@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import SmoothScroll from "./components/providers/SmoothScroll";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({
         `}
       >
         <SmoothScroll>
+          <Toaster position="top-center" reverseOrder={false} />
           <Navbar />
           {children}
           <Footer />

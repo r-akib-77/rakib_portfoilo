@@ -33,6 +33,7 @@ import {
   FaFacebookF,
 } from "react-icons/fa";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 export default function ContactPage() {
   const [name, setName] = useState("");
@@ -43,17 +44,17 @@ export default function ContactPage() {
 
     // Validation
     if (!name.trim()) {
-      alert("Please enter your name");
+      toast.error("Please enter your name");
       return;
     }
 
     if (!email.trim()) {
-      alert("Please enter your email");
+      toast.error("Please enter your email");
       return;
     }
 
     if (!editor?.getText().trim()) {
-      alert("Please enter a message");
+      toast.error("Please enter a message");
       return;
     }
 
@@ -74,16 +75,16 @@ export default function ContactPage() {
       });
 
       if (response.ok) {
-        alert("Message sent successfully!");
+        toast.success("Message sent successfully!");
 
         setName("");
         setEmail("");
         editor?.commands.clearContent();
       } else {
-        alert("Failed to send message.");
+        toast.error("Failed to send message.");
       }
     } catch (error) {
-      alert("Network error.");
+      toast.error("Network error.");
     } finally {
       setLoading(false);
     }
