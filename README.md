@@ -1,43 +1,148 @@
-Purpose Color
-Background #05010A
-Deep Purple #6D28D9
-Accent Glow #A855F7
-Glass Border rgba(255,255,255,0.08)
-Text #F5F3FF
+# 🚀 Rakib Hasan Portfolio
 
-1. Floating Logo
-2. Hero Fade-Up
-3. Mouse Glow
-4. Magnetic Buttons
-5. Glass Card Hover
-6. Section Reveal on Scroll
-7. Animated Grid Drift
-8. Aurora Gradient Animation
-9. Text Reveal Animation
-10. Project Card Spotlight
-11. Smooth Scroll
-12. Navbar Blur Transition
-13. Staggered Tech Stack Animation
-14. Gradient Border Animation
-15. Noise Film Grain
+A modern and responsive developer portfolio built with **Next.js 15**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, and **TipTap Editor**.
 
-Your aesthetic should feel:
+Showcasing projects, skills, experience, resume, and contact information with a clean dark-themed UI and smooth animations.
 
-calm
-intelligent
-cinematic
-premium
-engineered
+---
 
-| Purpose          | Library       |
-| ---------------- | ------------- |
-| Main motion      | Framer Motion |
-| Smooth scroll    | Lenis         |
-| Advanced physics | GSAP (later)  |
+## ✨ Features
 
-| Animation        | Duration |
-| ---------------- | -------- |
-| Fade             | 0.7–1s   |
-| Hover            | 0.3s     |
-| Floating         | 5–8s     |
-| Background drift | 20–40s   |
+- Modern UI/UX Design
+- Fully Responsive Layout
+- Animated Hero Section
+- Project Showcase
+- Resume Section
+- Skills Section
+- Contact Form Integration
+- Rich Text Editor (TipTap)
+- Framer Motion Animations
+- SEO Friendly
+- Fast Performance with Next.js
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- Next.js 15
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+
+### UI & Icons
+
+- Lucide React
+- React Icons
+
+### Editor
+
+- TipTap Editor
+
+### Form Handling
+
+- Formspree
+
+### Deployment
+
+- Vercel
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+│
+├── app/
+│   ├── about/
+│   ├── admin/
+│   ├── contact/
+│   ├── projects/
+│   ├── resume/
+│   ├── sections/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│
+public/
+```
+
+---
+
+## 🚀 Getting Started
+
+## 🌐 Sections
+
+### Home
+
+Introduction and personal branding.
+
+### About
+
+Personal information, background, and goals.
+
+### Projects
+
+Featured projects with live demos and source code links.
+
+### Resume
+
+Professional experience, education, and achievements.
+
+### Contact
+
+Direct contact form and social links.
+
+### Admin
+
+Project management dashboard.
+
+---
+
+## 📸 Featured Technologies
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Node.js
+- Express.js
+- MongoDB
+- PostgreSQL
+- Prisma
+- Firebase
+- Supabase
+- Framer Motion
+- n8n Automation
+- OpenAI APIs
+
+---
+
+## 📱 Social Links
+
+- GitHub
+- LinkedIn
+- Facebook
+
+Update the URLs in the contact page to your own profiles.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+### Rakib Hasan
+
+Full Stack Developer | SaaS Developer | Automation Engineer
+
+Building modern web applications, SaaS products, AI-powered systems, and workflow automations.
