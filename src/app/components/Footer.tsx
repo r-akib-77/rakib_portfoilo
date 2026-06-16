@@ -15,22 +15,22 @@ export default function Footer() {
   const socials = [
     {
       icon: FaGithub,
-      href: "https://github.com/yourusername",
+      href: "https://github.com/r-akib-77?tab=repositories",
     },
 
     {
       icon: FaLinkedinIn,
-      href: "https://linkedin.com/in/yourusername",
+      href: "https://www.linkedin.com/in/rakibul-hasan-517b192a7",
     },
 
     {
       icon: FaInstagram,
-      href: "https://instagram.com/yourusername",
+      href: "https://www.instagram.com/r_akib_77?igsh=MXJnMG5vcjdpa2ZkaQ==",
     },
 
     {
       icon: FaFacebookF,
-      href: "https://facebook.com/yourusername",
+      href: "https://www.facebook.com/share/1CRHimXxNu/",
     },
 
     {

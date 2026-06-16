@@ -62,7 +62,7 @@ export default function ProblemSolving() {
       md:py-7
       py-5
         md:px-8
-        lg:px-12
+        lg:px-12  
       "
     >
       {/* GRID BG */}

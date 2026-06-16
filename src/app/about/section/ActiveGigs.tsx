@@ -14,7 +14,7 @@ const gigs = [
 
     desc: "Transforming modern UI designs into responsive, animated, pixel-perfect frontend experiences with clean architecture and smooth interactions.",
 
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+    image: "/gigs/frontend.png",
 
     icon: Globe,
 
@@ -35,7 +35,7 @@ const gigs = [
 
     desc: "Building scalable full-stack platforms with authentication, APIs, dashboards, databases, payment systems, admin panels, and mobile-ready architecture.",
 
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    image: "/gigs/fullstack.png",
 
     icon: Layers3,
 
@@ -56,7 +56,7 @@ const gigs = [
 
     desc: "Creating intelligent automations, AI workflows, integrations, data pipelines, and productivity systems using n8n and modern automation tools.",
 
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+    image: "/gigs/automation.png",
 
     icon: Workflow,
 
@@ -320,29 +320,6 @@ export default function ActiveGigs() {
                   />
 
                   {/* TOP BADGE */}
-                  <div
-                    className={`
-                      absolute
-                      left-4
-                      top-4
-                      rounded-full
-                      bg-gradient-to-r
-                      ${gig.color}
-                      px-3
-                      py-1.5
-                    `}
-                  >
-                    <span
-                      className="
-                        text-[10px]
-                        font-semibold
-                        tracking-[0.15em]
-                        text-white
-                      "
-                    >
-                      ACTIVE GIG
-                    </span>
-                  </div>
                 </div>
 
                 {/* CONTENT */}

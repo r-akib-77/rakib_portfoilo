@@ -258,7 +258,7 @@ export default function ResumeSection() {
                 scale: 0.97,
               }}
               href="/resume.pdf"
-              download
+              download={"Rakib-resume.pdf"}
               className="
                 group/btn
                 flex
@@ -379,13 +379,13 @@ export default function ResumeSection() {
                 {[
                   {
                     icon: Code2,
-                    value: "20+",
+                    value: "100+",
                     label: "Projects",
                   },
 
                   {
                     icon: BriefcaseBusiness,
-                    value: "3+",
+                    value: "4+",
                     label: "Services",
                   },
 
@@ -528,8 +528,8 @@ export default function ResumeSection() {
                   scale: 0.98,
                 }}
                 href="/resume.pdf"
-                download
-                className="
+                download={"Rakib-Resume.pdf"}
+                className=" 
                   group/btn
                   mt-8
                   hidden

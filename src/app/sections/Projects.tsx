@@ -23,18 +23,18 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Vein – Full Stack Blood Donation Platform",
+    title: "BritTrade-Trading",
 
     description:
-      "A real-time healthcare platform connecting blood donors with recipients through intelligent matching and secure request management.",
+      "BritTrade-Trading is a modern, high-performance trading platform built to simplify complex financial markets through a seamless and intuitive user experience.Designed with speed, security, and real-time data visualization in mind, it empowers traders to execute strategies with confidence and precision",
 
-    image: "/projects/project1.png",
+    image: "/projectPic/bit-trade.png",
 
-    preview: "/projects/project1-preview.png",
+    preview: "/projectPic/bit-trade.png",
 
-    github: "#",
+    github: "https://github.com/r-akib-77/BritTrade-Trading",
 
-    live: "#",
+    live: "https://brittrade.britsync.co.uk/",
 
     tech: [
       {
@@ -87,18 +87,18 @@ const projects = [
   },
 
   {
-    title: "Crafty – Artisan Marketplace",
+    title: "Odessey-FC ",
 
     description:
-      "Modern marketplace platform for handmade products with authentication, analytics and scalable architecture.",
+      "Welcome to the official frontend portal framework for Odyssey FC. This application delivers a premium, highly responsive dark-aesthetic user interface designed to bridge fans, players, and corporate partners. Built with cutting-edge React architectures, it provides fluid motion design alongside clean backend control panels.",
 
-    image: "/projects/project2.png",
+    image: "/projectPic/odyssey.png",
 
-    preview: "/projects/project2-preview.png",
+    preview: "/projectPic/odyssey.png",
 
-    github: "#",
+    github: "https://github.com/r-akib-77/Odessey-FC",
 
-    live: "#",
+    live: "https://odessey-fc.pages.dev/",
 
     tech: [
       {
@@ -151,18 +151,18 @@ const projects = [
   },
 
   {
-    title: "Realtime Chat Platform",
+    title: "LeadHunter — Ultimate B2B Lead Generation & Outreach System",
 
     description:
-      "Realtime messaging architecture using websockets, scalable backend infrastructure and premium UI interactions.",
+      "LeadHunter is a powerful, full-stack lead generation and automated outreach platform. It combines a high-performance scraping engine with a sophisticated email campaign manager, all within a sleek, modern dashboard.",
 
-    image: "/projects/project3.png",
+    image: "/projectPic/leadhunter.png",
 
-    preview: "/projects/project3-preview.png",
+    preview: "/projectPic/leadhunter.png",
 
-    github: "#",
+    github: "https://github.com/r-akib-77/LeadHunter",
 
-    live: "#",
+    live: "https://leadhunter.uk/",
 
     tech: [
       {

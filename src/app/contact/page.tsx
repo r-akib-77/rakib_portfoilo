@@ -32,8 +32,62 @@ import {
   FaInstagram,
   FaFacebookF,
 } from "react-icons/fa";
+import { useState } from "react";
 
 export default function ContactPage() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const submitForm = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // Validation
+    if (!name.trim()) {
+      alert("Please enter your name");
+      return;
+    }
+
+    if (!email.trim()) {
+      alert("Please enter your email");
+      return;
+    }
+
+    if (!editor?.getText().trim()) {
+      alert("Please enter a message");
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const response = await fetch("https://formspree.io/f/xbdebzbv", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message: editor?.getHTML() || "",
+        }),
+      });
+
+      if (response.ok) {
+        alert("Message sent successfully!");
+
+        setName("");
+        setEmail("");
+        editor?.commands.clearContent();
+      } else {
+        alert("Failed to send message.");
+      }
+    } catch (error) {
+      alert("Network error.");
+    } finally {
+      setLoading(false);
+    }
+  };
   const editor = useEditor({
     extensions: [
       StarterKit,
@@ -98,22 +152,20 @@ export default function ContactPage() {
   const socials = [
     {
       icon: FaGithub,
-      link: "https://github.com/yourusername",
+      link: "https://github.com/r-akib-77?tab=repositories",
     },
 
     {
       icon: FaLinkedinIn,
-      link: "https://linkedin.com/in/yourusername",
+      link: "https://www.linkedin.com/in/rakibul-hasan-517b192a7",
     },
-
     {
       icon: FaInstagram,
-      link: "https://instagram.com/yourusername",
+      link: "https://www.instagram.com/r_akib_77/",
     },
-
     {
       icon: FaFacebookF,
-      link: "https://facebook.com/yourusername",
+      link: "https://www.facebook.com/share/1CRHimXxNu/",
     },
   ];
 
@@ -127,8 +179,8 @@ export default function ContactPage() {
         py-14
         sm:px-6
         md:px-8
-        pt-20
-        md:pt-26
+        pt-32
+        md:pt-40
         lg:px-12
       "
     >
@@ -587,7 +639,8 @@ export default function ContactPage() {
 
             {/* RIGHT */}
             <div>
-              <div
+              <form
+                onSubmit={submitForm}
                 className="
                   grid
                   gap-3
@@ -609,6 +662,9 @@ export default function ContactPage() {
 
                   <input
                     type="text"
+                    name="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                     placeholder="Your Name"
                     className="
                       h-13
@@ -645,6 +701,9 @@ export default function ContactPage() {
 
                   <input
                     type="email"
+                    name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     placeholder="Your Email"
                     className="
                       h-13
@@ -744,7 +803,10 @@ export default function ContactPage() {
                 </div>
 
                 {/* BUTTON */}
+
                 <motion.button
+                  type="submit"
+                  disabled={loading}
                   whileHover={{
                     scale: 1.02,
                   }}
@@ -770,7 +832,7 @@ export default function ContactPage() {
                     sm:h-14
                   "
                 >
-                  Send Message
+                  {loading ? "Sending..." : "Send Message"}
                   <Send
                     size={17}
                     className="
@@ -781,7 +843,7 @@ export default function ContactPage() {
                     "
                   />
                 </motion.button>
-              </div>
+              </form>
             </div>
           </div>
         </motion.div>

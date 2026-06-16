@@ -212,7 +212,7 @@ export default function Navbar() {
               {navItems.map((item, index) => (
                 <motion.a
                   key={item}
-                  href={`#${item.toLowerCase()}`}
+                  href={`/${item.toLowerCase() === "home" ? "" : item.toLowerCase()}`}
                   initial={{
                     opacity: 0,
                     y: -10,
@@ -237,7 +237,7 @@ export default function Navbar() {
                     border-transparent
                     px-5
                     py-2.5
-                    text-sm
+                    md:text-lg
                     font-medium
                     text-zinc-300
                     transition-all
@@ -372,7 +372,7 @@ export default function Navbar() {
               {navItems.map((item, index) => (
                 <motion.a
                   key={item}
-                  href={`/${item.toLowerCase()}`}
+                  href={`/${item.toLowerCase() === "home" ? "" : item.toLowerCase()}`}
                   initial={{
                     opacity: 0,
                     x: -20,
