@@ -13,6 +13,8 @@ export default function Home() {
         relative
         overflow-hidden
         bg-[#05010A]
+        md:pt-28
+        pt-20
       "
     >
       {/* GLOBAL GRID */}
